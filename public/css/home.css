@@ -1,0 +1,435 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+    width: 100%;
+    height: 140vh;
+    position: relative;
+    padding: 0;
+}
+  
+#hero:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.5;
+}
+  
+#hero .container {
+    z-index: 2;
+}
+  
+#hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 110px;
+    font-weight: 700;
+    color: #0e305d;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: left;
+}
+  
+#hero p {
+    color: #0e305d;
+    margin-bottom: 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 27px;
+    text-align: left;
+    padding-right: 80px;
+}
+  
+/* #hero .btn-get-started:hover {
+    background: #4ea5e0;
+} */
+  
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* #hero {
+      height: calc(100vh - 70px);
+    } */
+    #hero {
+        height: 60vh;
+    }
+    #hero h1 {
+        font-size: 88px;
+        text-align: center;
+    }
+    #hero p {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 30px;
+        text-align: center;
+        padding-right: 0px;
+    }
+    .hero-image {
+        object-fit: cover;
+        height: 130%;
+    }
+    #hero .justify-content-start {
+        justify-content: center !important;
+    }
+}
+  
+@media (max-width: 767px) {
+    #hero {
+        height: 70vh;
+    }
+    #hero h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+    #hero p {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 30px;
+        text-align: center;
+        padding-right: 0px;
+        padding: 15px;
+    }
+    .hero-image {
+        object-fit: cover;
+        height: 130%;
+    }
+    #hero .justify-content-start {
+        justify-content: center !important;
+    }
+}
+
+/*--------------------------------------------------------------
+# About Us section
+--------------------------------------------------------------*/
+
+.about-us .underline-with-gap {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px; 
+    color: #0e305d;
+}
+    
+.about-us .underline-with-gap::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -1px; /* Adjust the distance of the underline from the text as needed */
+    width: 100%;
+    height: 1px;
+    background-color: #0e305d; /* Change the color of the underline as needed */
+}
+
+/* @media only screen and (min-width: 768px) and (max-width: 1023px) { */
+    /* Styles for most tablets */
+    /* .about-us .col-lg-6.col-md-12.py-5.ps-5 {
+        padding: 0px !important;
+    }
+} */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* CSS styles for tablets go here */
+    .about-us {
+        padding: 2rem !important;
+    }
+    .about-us .container {
+        max-width: 100% !important;
+    }
+    .about-us .text-container {
+        padding-left: 0px !important;
+    }
+    .gap {
+        height: 50px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .about-us {
+        padding: 0px !important;
+    }
+    .about-us .container {
+        max-width: 100% !important;
+    }
+    .about-us .img-container {
+        padding-top: 20px;
+    }
+    .about-us .text-container {
+        padding-left: 10px !important;
+    }
+    .about-us .text-container button {
+        margin-bottom: 50px;
+    }
+    .gap {
+        height: 50px !important;
+    }
+}
+
+/* Services Section
+--------------------------------*/
+
+#services {
+    background: #F0F3FF;
+}
+
+#services .box {
+    padding: 30px;
+    position: relative;
+}
+
+/* #services .box:hover {
+    background: #fff;
+    box-shadow: 10px 10px 52px 17px rgba(171,169,169,0.3);
+}
+
+#services .box:hover .icon i {
+    color: #2dc997;
+}
+
+#services .box:hover .icon a {
+    color: #2dc997;
+} */
+
+#services .title {
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+}
+
+#services .title a {
+    color: #0e305d;
+    text-decoration: none;
+}
+
+#services .description {
+    font-size: 16px;
+    line-height: 28px;
+    color: #6E789E
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #services {
+        padding: 0 0 0 0 !important;
+    }
+    #services .container.p-5 {
+        max-width: 100% !important;
+    }
+    #services .services-title {
+        text-align: center;
+    }
+    #services .services-description {
+        margin-right: 0px !important;
+        text-align: center;
+    }
+    #services .title {
+        font-size: 16px;
+        font-family: 'Barlow', sans-serif;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #services {
+        padding: 50px 0 0 0 !important;
+    }
+    #services .container.p-5 {
+        max-width: 100% !important;
+        padding: 2rem !important;
+    }
+    #services .fw-bold.fs-1 {
+        text-align: center;
+    }
+    #services .services-description {
+        margin-right: 0 !important;
+        text-align: center;
+    }
+    #services .bg-white {
+        margin-bottom: 20px !important;
+    }
+}
+
+
+/* Employment Section
+--------------------------------*/
+
+#employment {
+    /* background: #F0F3FF; */
+    background: white;
+}
+
+#employment .box {
+    padding: 30px;
+    position: relative;
+}
+
+#employment .margin-top {
+    margin-top: -180px;
+}
+
+#employment .bg-dblue {
+    padding-block: 48px;
+    padding-bottom: 170px !important;
+}
+
+/* #employment .box:hover {
+    background: #fff;
+    box-shadow: 10px 10px 52px 17px rgba(171,169,169,0.3);
+}
+
+#employment .box:hover .icon i {
+    color: #2dc997;
+}
+
+#employment .box:hover .icon a {
+    color: #2dc997;
+} */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #employment {
+        padding: 0 0 0 0 !important;
+    }
+    #employment .py-5 {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+    #employment .employment-title {
+        text-align: center;
+    }
+    #employment .employment-description {
+        margin-right: 0px !important;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #employment {
+        padding: 50px 0 0 0 !important;
+    }
+    #employment .py-5 {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+    #employment .fw-bold.fs-1 {
+        text-align: center;
+    }
+    #employment .employment-description {
+        margin-right: 0 !important;
+        text-align: center;
+    }
+    #employment .bg-white {
+        margin-bottom: 20px !important;
+    }
+}
+
+/* Blogs */
+.blogs-container .text-container:hover {
+    background-color: #8893B1 !important;
+}
+
+.blogs-container .text-container:hover .text-container-description, 
+.blogs-container .text-container:hover .text-container-title {
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    br {
+        display: none;
+    }
+    .blogs-container .blogs-description {
+        text-align: justify;
+    }
+    .blogs-container .text-container {
+        margin-right: 0px !important;
+    }
+    .blogs-container .col-md-6.col-lg-4.py-4 {
+        padding-top: 0px !important;
+    }
+}
+/* Blogs End */
+
+/* Get in Touch Section Start */
+@media only screen and (max-width: 992px) {
+    .map-container {
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+        border-radius: 20px;
+        margin-bottom: 20px !important;
+    }
+    .map-container iframe {
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+}
+
+#getintouch label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0e305d;
+}
+
+#getintouch input {
+    border: solid gray thin;
+    height: 70px;
+}
+
+#getintouch input::placeholder {
+    font-size: 18px;
+}
+
+#getintouch textarea {
+    border: solid gray thin;
+}
+
+#getintouch textarea::placeholder {
+    font-size: 18px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Styles for most tablets */
+    #getintouch .col-lg-6.col-md-12.text-center {
+        padding: 40px !important;
+    }
+    br {
+        display: none;
+    }
+    #getintouch h1 {
+        padding-left: 0px !important;
+        text-align: center !important;
+        margin-bottom: 25px !important;
+    }
+    #getintouch .justify-content-start {
+        justify-content: center !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #getintouch {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+    #getintouch h1 {
+        padding-left: 0px !important;
+        text-align: center !important;
+        font-size: 23px;
+        margin-bottom: 20px !important;
+    }
+    br {
+        display: none;
+    }
+    #getintouch .col-lg-6.col-md-12.text-center {
+        padding: 30px !important;
+    }
+}
+/* Get in Touch Section End */

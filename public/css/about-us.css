@@ -1,0 +1,159 @@
+/* Header section */
+.bg-about img {
+    object-fit: fill;
+    object-position: center;
+}
+
+.first-container .text-container {
+    margin-top: 157px;
+    padding-inline: 15%;
+}
+
+.first-container .text-container div {
+    max-width: 950px;
+    margin-top: 13vh;
+}
+
+@media screen and (max-width: 575px) {
+    .first-container .text-container {
+        padding-inline: 5%;
+    }
+    .bg-about img {
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .first-container .text-container {
+        margin-top: 108px;
+    }
+    .bg-about img {
+        object-fit: cover;
+    }
+}
+
+.first-container h1 {
+    font-size: clamp(1rem, 0.5rem + 10vw, 4rem);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Styles for most tablets */
+    #about4 .about4-text {
+        padding-top: 70px !important;
+    }
+    #about3 .about3-text {
+        padding-top: 20px !important;
+    }
+    #about3 .about3-text p {
+        font-size: 21px !important;
+    }
+    #about3 .col-md-5.py-3.pe-0 img {
+        height: 400px !important;
+        width: 90% !important;
+    }
+    #about2 .about2-text {
+        padding-top: 60px !important;
+        padding-left: 50px !important;
+    }
+    #about1 .about1-text {
+        padding-top: 60px !important;
+        padding-left: 50px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* Styles for mobile devices */
+    #about1 .about1-text {
+        padding-right: 5px !important;
+        padding-left: 10px !important;
+    }
+
+    #about1 .col-lg-6.col-md-12.py-3.pe-0 {
+        padding-left: 0px !important;
+    }
+    #about1 h1 {
+        font-size: 28px !important;
+    }
+    #about1 .fs-6.fw-bold {
+        font-size: 20px !important;
+    }
+    #about2 .about2-text {
+        padding-top: 40px !important;
+        padding-left: 50px !important;
+        margin-bottom: 20px;
+    }
+    #about3 .about3-text {
+        padding-top: 0px !important;
+        padding-left: 20px !important;
+        padding-right: 0px !important;
+    }
+    #about3 img {
+        height: 400px !important;
+    }
+    #about4 .about4-text {
+        padding-top: 40px !important;
+        padding-left: 50px !important;
+        padding-bottom: 30px !important;
+    }
+}
+
+/*** Employers ***/
+.employers-item {
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+}
+.employers-item .img-hover-zoom {
+    overflow: hidden;
+}
+.employers-item .img-hover-zoom img {
+    transition: transform 0.25s;
+}
+.employers-item .img-hover-zoom:hover img {
+    transform: scale(1.1);
+}
+
+/* Get in Touch Section Start */
+@media only screen and (max-width: 992px) {
+    .map-container {
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+        border-radius: 20px;
+        margin-bottom: 20px !important;
+    }
+    .map-container iframe {
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+}
+
+#getintouch input::placeholder {
+    font-size: 18px;
+}
+
+#getintouch textarea::placeholder {
+    font-size: 18px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Styles for most tablets */
+    #getintouch .col-lg-6.col-md-12.text-center {
+        padding: 40px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #getintouch {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+    #getintouch .col-lg-6.col-md-12.text-center {
+        padding: 30px !important;
+    }
+}
+/* Get in Touch Section End */

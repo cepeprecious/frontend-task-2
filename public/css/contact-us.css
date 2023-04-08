@@ -1,0 +1,112 @@
+/* Header section */
+.bg-about img {
+    /* object-fit: cover; */
+    object-fit: fill;
+    object-position: center;
+}
+
+@media screen and (min-width: 991px) {
+    .bg-about img {
+        object-fit: fill;
+    }
+}
+
+/* Contact Us Start */
+#contact_us {
+    margin-top: 100px;
+}
+
+#contact_us input {
+    border-radius: 50px;
+    height: 60px;
+    border: solid rgb(117, 112, 112) thin;
+    padding: 25px;
+}
+
+#contact_us textarea {
+    border-radius: 25px;
+    border: solid rgb(117, 112, 112) thin;
+    height: 145px;
+    padding: 25px;
+}
+
+#contact_us input::placeholder {
+    font-size: 18px;
+}
+
+#contact_us textarea::placeholder {
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 767px) {
+    /* Styles for mobile devices */
+    #contact_us {
+        max-width: 90% !important;
+        margin-top: 180px !important;
+    }
+    #contact_us .row.p-5 {
+        padding: 30px 20px !important;
+    } 
+    .first-container {
+        height: 70px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Styles for most tablets */
+    #contact_us {
+        max-width: 90% !important;
+    }
+    #contact_us .row.p-5 {
+        padding: 1rem !important;
+    }
+    #contact_us .submit-button {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+}
+
+.third-container {
+    margin-top: 150px;
+    margin-bottom: 300px;
+}
+
+.third-container h1 {
+    font-size: 53px;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.third-container .map-img .address-container {
+    margin: 2%;
+    padding: 2%;
+}
+
+.third-container .map-img .address-container .icon-container {
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+    color: black;
+    border-width: 2px !important;
+}
+
+.third-container .map-img .address-container p {
+    margin: unset;
+    color: gray;
+}
+
+@media screen and (max-width: 991px) {
+    .third-container .map-img .address-container {
+        position: relative !important;
+        margin: unset;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* Styles for mobile devices */
+    .third-container {
+        margin-top: 100px;
+        margin-bottom: 150px;
+    }
+}
+
+/* Contact Us End */

@@ -1,0 +1,11 @@
+
+Style Guide 
+
+Fonts: 
+Heading - Open Sans
+Body - Lora
+
+Color: 
+Button - #c70039
+Button-text: Lora
+Navbar color - #0e305d

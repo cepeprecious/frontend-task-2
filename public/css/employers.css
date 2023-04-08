@@ -1,0 +1,60 @@
+
+.employers-container {
+    margin-block: 100px;
+    max-width: 85%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.employers-container .box-container {
+    padding: 80px;
+}
+
+.employers-container .form-control::placeholder {
+    font-size: 16px;
+    color: black;
+}
+
+.employers-container .fa-solid span {
+    font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Styles for most tablets */
+    .employers-container {
+        margin-block: 60px !important;
+        max-width: 90% !important;
+    }
+    .employers-container .box-container {
+        padding: 40px !important;
+    }
+    .employers-container .col-lg-3.col-md-12.d-flex.justify-content-center {
+        margin-top: 30px;
+    }
+    .employers-container .d-flex.justify-content-start {
+        margin-top: 5px !important;
+        justify-content: center !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* Styles for mobile devices */
+    .employers-container {
+        max-width: none !important;
+        margin-block: 50px !important;
+    }
+    .employers-container .box-container {
+        padding: 20px !important;
+        box-shadow: none !important;
+    }
+    .employers-container .input-1 {
+        margin-bottom: 20px !important;
+    }
+    .employers-container .col-lg-3.col-md-12.d-flex.justify-content-center {
+        margin-top: 30px;
+    }
+    .employers-container .d-flex.justify-content-start {
+        margin-top: 5px !important;
+        justify-content: center !important;
+        margin-right: 0px !important;
+    }
+}

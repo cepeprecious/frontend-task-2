@@ -1,0 +1,202 @@
+/* Page 1 */
+
+/* Header section */
+.bg-about img {
+    object-fit: fill;
+    object-position: center;
+}
+
+@media screen and (max-width: 575px) {
+    .bg-about img {
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .bg-about img {
+        object-fit: cover;
+    }
+}
+
+
+.second-container h1 {
+    padding-bottom: 30px;
+    margin-left: 30px;
+}
+
+.second-container .text-btn-container:hover {
+    outline: 1px solid #c70039;
+}
+
+.second-container .fa-solid span {
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+    .second-container .row h1 {
+        text-align: center !important;
+        margin-left: 0px !important;
+    }
+}
+@media only screen and (max-width: 767px) {
+    /* Styles for mobile devices */
+    .second-container .row {
+        padding: 0px !important;
+    }
+    .second-container .col-md-6.col-lg-4.p-4 {
+        padding: 1rem !important;
+    }
+    .second-container .row h1 {
+        text-align: center !important;
+        padding-top: 30px !important;
+        padding-bottom: 0px !important;
+        margin-left: 0px !important;
+    }
+    .second-container .text-btn-container {
+        padding: 2rem !important;
+    }
+    .pagination a {
+        font-size: 19px !important;
+    }
+}
+
+/* .pagination {
+    display: inline-block;
+} */
+  
+.pagination a {
+    color: #333;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 10px;
+}
+  
+.pagination a.active {
+    color: #c70039;
+    font-weight: bold;
+}
+  
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+  
+.pagination span.disabled {
+    display: none;
+}
+  
+.pagination .fa {
+    vertical-align: middle;
+}
+  
+.pagination .fa-chevron-right {
+    color: black;
+}
+/* End of Page 1 */
+
+
+/* Page 2 */
+.careers2-container {
+    margin-block: 100px;
+    max-width: 95%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.careers2-container .box-container {
+    padding: 80px;
+}
+
+.careers2-container .fa-solid span {
+    font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Styles for most tablets */
+    .careers2-container .box-container {
+        padding: 40px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* Styles for mobile devices */
+    .careers2-container .box-container {
+        padding: 30px !important;
+    }
+    .careers2-container .button-2 {
+        margin-top: 20px !important;
+        margin-bottom: 20px;
+    }
+    .careers2-container .button-1 {
+        margin-top: 10px;
+        width: 100% !important;
+    }
+}
+/* End of Page 2 */
+
+/* Modal */
+.modal {
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px;
+}
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 50px;
+}
+
+.form-control {
+    display: block;
+    width: 70%;
+    height: 60px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid #828486;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 15px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Styles for most tablets */
+    .modal-body {
+        padding: 20px !important;
+    }
+    .modal-body form .ps-3 {
+        padding-left: 9px !important;
+    }
+    .form-control {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    /* Styles for mobile devices */
+    .modal {
+        padding: 20px !important;
+    }
+    .modal-body {
+        padding: 15px !important;
+    }
+    .modal-body form .ps-3 {
+        padding-left: 10px !important;
+    }
+    .form-control {
+        width: 100%;
+    }
+    select option[disabled]::placeholder {
+        color: #a9a9a9; /* gray text color */
+        font-size: 5px !important;
+    }
+}
+  
